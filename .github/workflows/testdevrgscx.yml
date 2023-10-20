@@ -14,5 +14,5 @@ jobs:
     runs-on: "ubuntu-latest"
 
     steps:
-     - uses: dodlaraghram/action_terraform-fmt@v1
+     - uses: actions/action_terraform-fmt@v1
 
