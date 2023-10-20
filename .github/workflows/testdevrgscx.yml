@@ -5,10 +5,10 @@ on:
    
 
 #Special permissions required for OIDC authentication
-permissions:
-  id-token: write
-  contents: read
-  pull-requests: write
+# permissions:
+#   id-token: write
+#   contents: read
+#   pull-requests: write
 
 #These environment variables are used by the terraform azure provider to setup OIDD authenticate. 
 env:
