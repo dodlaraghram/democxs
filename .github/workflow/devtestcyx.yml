@@ -1,9 +1,8 @@
 name: 'Terraform Plan/Apply'
 
-on:
-  push:
-    branches:
-      - testdevbr
+on: push
+  
+   
   
 
 #Special permissions required for OIDC authentication
