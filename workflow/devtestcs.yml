@@ -1,0 +1,17 @@
+name: "terraform format"
+
+
+on: 
+  pull_request:
+    branches:
+      - testdevbr
+  workflow_dispatch:
+
+
+jobs:
+  local:
+    name: "check format"
+    runs-on: "ubuntu-latest"
+
+    steps:
+     - uses: dodlaraghram/action_terraform-fmt@v1
