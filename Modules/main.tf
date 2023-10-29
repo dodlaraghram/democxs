@@ -36,12 +36,12 @@ module "AzureADLS" {
   depends_on = [ module.AzureResourceGroups ]
 }
 
-# module "AzureLogAnalyticsWorkspace" {
-#     source = "./Modules/LogAnalyticsWs"
-#     loganalytics_resource_group_name = var.drr_loganalytics_resource_group_name
-#     location = var.drr_location
-#     log_analytics_workspacename = var.drr_log_analytics_workspacename
-#     common_tags = var.drr_common_tags
-#     depends_on = [ module.AzureResourceGroups ]
+module "AzureLogAnalyticsWorkspace" {
+    source = "./Modules/LogAnalyticsWs"
+    loganalytics_resource_group_name = var.drr_loganalytics_resource_group_name
+    location = var.drr_location
+    log_analytics_workspacename = var.drr_log_analytics_workspacename
+    common_tags = var.drr_common_tags
+    depends_on = [ module.AzureResourceGroups ]
   
-# }
+}

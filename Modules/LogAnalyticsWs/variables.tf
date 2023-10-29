@@ -1,6 +1,6 @@
-# variable "Azloaws.name" {
-#   type = string
-# }
+variable "Azloaws.name" {
+  type = string
+}
 
 variable "Azloaws" {
   type = string
